@@ -354,8 +354,8 @@
 						var isNegative = (value[0] === '-'),
 							needsToInvertSign = (value.slice(-1) === '-');
 
-						//only apply the minus sign if it is negative or(exclusive) needs to be negative and the number is different from zero
-						if(needsToInvertSign ^ isNegative && !!actualNumber) {
+						//only apply the minus sign if it is negative or(exclusive) needs to be negative
+						if(needsToInvertSign ^ isNegative ) {
 							actualNumber *= -1;
 							formatedValue = '-' + formatedValue;
 						}
